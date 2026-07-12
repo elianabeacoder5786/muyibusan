@@ -256,12 +256,16 @@ const days = [
       { title: "🧳 行李轉運 Zimcarry", items: [
         { time:"", type:"warn", icon:"📦", title:"10/27　海雲台飯店 → 西面飯店", sub:"10:00前交櫃檯", tags:["warn"] },
       ]},
-      { title: "💳 WOWPASS 換匯分配（台幣 $36,000）", items: [
-        { time:"", type:"tip", icon:"💱", title:"錢包帳戶（消費）", sub:"₩1,000,000　≈ NT$23,810", tags:["tip"] },
-        { time:"", type:"trans", icon:"🚇", title:"T-money（交通）", sub:"₩100,000　≈ NT$2,380", tags:["trans"] },
-        { time:"", type:"warn", icon:"💵", title:"現金備用", sub:"₩250,000　≈ NT$5,950", tags:["warn"] },
-        { time:"", type:"night", icon:"🔒", title:"緊急備用（保險箱）", sub:"₩162,000　≈ NT$3,860\n合計　₩1,512,000　≈ NT$36,000", tags:["night"] },
-        { time:"", type:"tip", icon:"💡", title:"當地換匯備選點", sub:"釜山當地 Money Box\n南浦洞 友利우리환전 / 映真영진환전 換錢所\n西面 娜英換錢所나영환전\n皆可用台幣換韓元", tags:["tip"] },
+      { title: "💳 換匯總表（單人）四大類金額", items: [
+        { time:"", type:"tip", icon:"💳", title:"個人刷卡金（WOWPASS）", sub:"NT$23,800　→　₩1,000,000\n用途：餐廳、購物、大額計程車（單趟>₩40,000）", tags:["tip"] },
+        { time:"", type:"trans", icon:"🚇", title:"個人交通金（T-money）", sub:"NT$360　→　約₩15,000\n用途：地鐵、公車（本行程多以計程車代步，交通金已下修）", tags:["trans"] },
+        { time:"", type:"warn", icon:"👛", title:"個人現金備用", sub:"NT$約240　→　₩10,000\n用途：私人零星花費、小費等備用金\n＊10/24換匯當場分好，各自保管，不與公費混用", tags:["warn"] },
+        { time:"", type:"night", icon:"🤝", title:"公費現金（三人均分出資，團體保管）", sub:"每人分攤　約NT$2,760　→　約₩116,000\n三人合計　NT$8,700　→　約₩348,000\n用途：路邊攤小吃、小額計程車（單趟<₩40,000）\n＊團體統一保管支付，方便均攤記帳", tags:["night","tip"] },
+        { time:"", type:"tip", icon:"🧮", title:"單人總計", sub:"約NT$3,000　→　約₩1,141,000", tags:["tip"] },
+      ]},
+      { title: "📅 建議換匯時間點與金額（三人團體・僅2次）", items: [
+        { time:"10/24", type:"warn", icon:"🏨", title:"海雲台 Money Box（現金）＋WOWPASS機台（三人各自儲值）", sub:"Money Box現金兌換：NT$3,000　→　₩126,000\n　分配：個人現金備用 3人×₩10,000＝₩30,000（當場領出各自保管）\n　　　　公費現金　₩96,000（進團體資金池）\nWOWPASS機台儲值（單人）：刷卡金NT$23,800→₩1,000,000＋交通金NT$360→₩15,000", tags:["warn","tip"] },
+        { time:"10/27", type:"tip", icon:"🏮", title:"南浦洞換錢所（友利/映真）", sub:"NT$6,000　→　₩252,000（全數公費出資，支應10/27晚～11/1）\n＊換錢所以台幣$1,000為單位兌換", tags:["tip"] },
       ]},
       { title: "📌 預約事項", items: [
         { time:"", type:"tip", icon:"📲", title:"Wowpass APP 預購「換匯儲值卡」", sub:"獲得預約代碼，到韓國當地機台免開卡費", tags:["tip"] },
@@ -275,7 +279,7 @@ const days = [
       ]},
     ],
     navers: [],
-    tip: { title:"💡 使用小提醒", text:"點任一 Naver Map 韓文名稱可直接複製，貼到 Naver Map App 搜尋列即可查路線。行前記得把上面幾個預約事項提前處理好，尤其是膠囊列車搶票和 Catch Table 訂位時間限制較嚴格！" }
+    tip: { title:"💡 使用小提醒", text:"點任一 Naver Map 韓文名稱可直接複製，貼到 Naver Map App 搜尋列即可查路線。行前不用先換匯，改成10/24＋10/27兩次團體換匯就備齊全程現金：10/24當場先分好三人各自的個人現金備用（各₩10,000），剩下的進團體公費資金池，統一保管支付路邊攤與小額計程車。大額計程車（單趟>₩40,000，如機場來回）記得改用WOWPASS刷卡金支付。" }
   },
   {
     id: 1, btn: "10/24 出發", color: "orange",
@@ -290,7 +294,7 @@ const days = [
       { title: "🌙 抵達 & 安頓", items: [
         { time:"22:00", type:"trans", icon:"🚗", title:"Klook 包車接機", sub:"出境大廳等司機舉牌\n目的地：해운대구 구남로 42", tags:["trans"] },
         { time:"23:15", type:"tip", icon:"🏨", title:"Best Western Haeundae Check-in", sub:"", tags:["tip"] },
-        { time:"23:45", type:"shop", icon:"💳", title:"取得 Wowpass 實體卡、現金換匯、便利商店巡禮", sub:"(1) L7飯店（L7 해운대 바이 롯데）機台取得WP實體卡儲值刷卡金\n　　APP可綁定實體卡儲值到T-money交通卡\n(2) Seacloud飯店（코오롱 씨클라우드 호텔）一樓 Money Box 24H機台\n　　台幣 $2000 換韓元\n(3) CU 或 GS25 買宵夜或想吃的品項", tags:["shop","tip"] },
+        { time:"23:45", type:"shop", icon:"💳", title:"取得 Wowpass 實體卡、現金換匯、便利商店巡禮", sub:"(1) L7飯店（L7 해운대 바이 롯데）機台取得WP實體卡儲值刷卡金\n　　APP可綁定實體卡儲值到T-money交通卡\n(2) Seacloud飯店（코오롱 씨클라우드 호텔）一樓 Money Box 24H機台\n　　台幣 $3,000 換韓元（三人團體換匯）\n　　→ 個人現金備用 3人×₩10,000＝₩30,000（當場領出各自保管）\n　　→ 公費現金 ₩96,000（進團體資金池）\n(3) CU 或 GS25 買宵夜或想吃的品項", tags:["shop","tip"] },
       ]},
     ],
     navers: [
@@ -298,7 +302,7 @@ const days = [
       ["L7 해운대","L7 해운대 바이 롯데","WOWPASS實體卡＋儲值機台"],
       ["Seacloud 飯店","코오롱 씨클라우드 호텔","1F Money Box 24H機台"],
     ],
-    tip: { title:"⚠ WOWPASS 使用提醒", text:"第一天深夜抵達，先用WOWPASS錢包帳戶（非T-money）應急，隔天再視需求儲值T-money交通卡。L7飯店與Seacloud飯店都在海雲台步行可達範圍，深夜巡禮換匯很方便。" }
+    tip: { title:"⚠ WOWPASS 使用提醒", text:"行前不用先換匯，第一天深夜抵達直接在Money Box一次換好台幣$3,000（三人團體），當場分好個人現金備用與公費現金，先用WOWPASS錢包帳戶（非T-money）應急，隔天再視需求儲值T-money交通卡。L7飯店與Seacloud飯店都在海雲台步行可達範圍，深夜巡禮換匯很方便。" }
   },
   {
     id: 2, btn: "10/25 海雲台", color: "teal",
@@ -403,7 +407,7 @@ const days = [
       ]},
       { title: "🛍 晚間｜南浦洞 → 西面換房", items: [
         { time:"17:30", type:"trans", icon:"🚕", title:"搭計程車前往南浦洞", sub:"", tags:["trans"] },
-        { time:"17:45", type:"shop", icon:"🛍", title:"南浦洞商圈逛街", sub:"(1) 南浦洞7號出口步行換匯（友利우리환전/映真영진환전換錢所）\n(2) K-POP唱片行（KPOP FRIENDS 남포점／I LOVE MUSIC 아이러브뮤직）\n(3) BIFF廣場 비프광장（電影節廣場＋堅果黑糖餅씨앗호떡）", tags:["shop"] },
+        { time:"17:45", type:"shop", icon:"🛍", title:"南浦洞商圈逛街", sub:"(1) 南浦洞7號出口步行換匯（友利우리환전/映真영진환전換錢所）\n　　台幣 $6,000 換韓元（三人團體公費，支應10/27晚～11/1）\n(2) K-POP唱片行（KPOP FRIENDS 남포점／I LOVE MUSIC 아이러브뮤직）\n(3) BIFF廣場 비프광장（電影節廣場＋堅果黑糖餅씨앗호떡）", tags:["shop"] },
         { time:"19:15", type:"food", icon:"🥩", title:"晚餐：百花烤腸 백화양곱창", sub:"必點：鹽烤（소금구이）、調味烤腸（양념구이）、炒飯（양볶음밥）\n註：衣服會沾味道", tags:["food"] },
         { time:"20:30", type:"shop", icon:"🏮", title:"富平市場 부평시장（釜山最古老傳統市場）", sub:"推薦：富平罐頭골목（罐頭啤酒巷）炸物・紫菜飯捲", tags:["shop"] },
         { time:"21:00", type:"trans", icon:"🚇", title:"地鐵札嘎其站前往西面飯店", sub:"", tags:["trans"] },
@@ -600,10 +604,12 @@ const days = [
     id: 9, btn: "11/1 返程", color: "red",
     label: "DAY 9 · 11/1（日）", title: "最終日 西面採購 → 返程", emojis: "💊 🛒 ✈️",
     sections: [
-      { title: "💊 上午｜西面最終採購", items: [
-        { time:"11:00", type:"tip", icon:"🏨", title:"退房＋行李寄放飯店，輕裝出發", sub:"", tags:["tip"] },
-        { time:"11:15", type:"shop", icon:"💊", title:"藥局補貨：옵티마안약국 서면점", sub:"西面站10號出口旁，步行即達\n推薦品項：\nMelanosa 2% 乳膏 멜라노사크림（退黑色素、淡斑跟痘疤）\nAcleon Gel애클린겔 / Azelean아젤라인산（閉鎖性粉刺、黑頭、暗沉）\nFucidin후시딘軟膏（抗痘消炎）\nImoand이모엔드 或 口服淡斑藥먹는 기미약（口服美白錠）\n韓版大尺寸痘痘貼 Easyderm Beauty이지덤뷰티", tags:["shop"] },
-        { time:"12:00", type:"food", icon:"🍲", title:"午餐：合川一流豬肉湯飯西面分店 합천일류돼지국밥 서면점", sub:"湯頭濃郁，免費醃蘿蔔自取\n推薦：豬肉湯飯고기국밥（加蒜泥＋辣醬）、血腸湯飯순대국밥、白切豬肉小份수육 소（生菜/芝麻葉+蝦醬+泡菜+大蒜）", tags:["food"] },
+      { title: "🍲 上午｜提早午餐避開人潮", items: [
+        { time:"10:45", type:"tip", icon:"🏨", title:"退房＋行李寄放飯店，輕裝出發", sub:"", tags:["tip"] },
+        { time:"11:00", type:"food", icon:"🍲", title:"午餐：合川一流豬肉湯飯西面分店 합천일류돼지국밥 서면점", sub:"提早用餐，避開中午人潮\n湯頭濃郁，免費醃蘿蔔自取\n推薦：豬肉湯飯고기국밥（加蒜泥＋辣醬）、血腸湯飯순대국밥、白切豬肉小份수육 소（生菜/芝麻葉+蝦醬+泡菜+大蒜）", tags:["food"] },
+      ]},
+      { title: "💊 中午｜藥局採購＋西面走逛", items: [
+        { time:"12:30", type:"shop", icon:"💊", title:"藥局補貨：옵티마안약국 서면점", sub:"西面站10號出口旁，步行即達\n推薦品項：\nMelanosa 2% 乳膏 멜라노사크림（退黑色素、淡斑跟痘疤）\nAcleon Gel애클린겔 / Azelean아젤라인산（閉鎖性粉刺、黑頭、暗沉）\nFucidin후시딘軟膏（抗痘消炎）\nImoand이모엔드 或 口服淡斑藥먹는 기미약（口服美白錠）\n韓版大尺寸痘痘貼 Easyderm Beauty이지덤뷰티", tags:["shop"] },
         { time:"13:30", type:"shop", icon:"🛍", title:"西面站周圍街頭最後走逛", sub:"💳 順道至西面WOWPASS機台，提領卡內剩餘刷卡金（現金領出）", tags:["shop","tip"] },
         { time:"14:30", type:"tip", icon:"🏨", title:"返回飯店取回行李", sub:"", tags:["tip"] },
       ]},
