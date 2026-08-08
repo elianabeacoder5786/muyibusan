@@ -254,18 +254,24 @@ const days = [
         { time:"", type:"tip", icon:"🏨", title:"10/27–11/01　西面站周邊飯店", sub:"", tags:["tip"] },
       ]},
       { title: "🧳 行李轉運 Zimcarry", items: [
-        { time:"", type:"warn", icon:"📦", title:"10/27　海雲台飯店 → 西面飯店", sub:"10:00前交櫃檯", tags:["warn"] },
+        { time:"", type:"warn", icon:"📦", title:"10/26　海雲台飯店 → 西面飯店", sub:"9:00前交櫃檯，10/27晚間21:30到西面飯店領取", tags:["warn"] },
+      ]},
+      { title: "💴 行前換匯準備", items: [
+        { time:"", type:"tip", icon:"🏦", title:"行前至台灣銀行領台幣$1000新鈔", sub:"每人34張，共計台幣 $34,000\n＊另有 $1,000 已透過WOWPASS APP事前儲值，供10/24機場接駁使用（已計入總預算）", tags:["tip"] },
+        { time:"", type:"warn", icon:"❌", title:"取消：提早換匯", sub:"10/24 不需在高雄機場領結匯", tags:["warn"] },
+        { time:"", type:"tip", icon:"📲", title:"Wowpass APP 事前設定", sub:"(1) 事前儲值台幣 $1,000，供10/24機場接駁使用\n(2) 購買 eSIM premium 10天＋行前台灣開通（各商店優惠券可到當地消費時評估加購，用來結帳會有現金回饋，回饋入Wowpass刷卡帳戶）\n➡ 有附韓國當地號碼，需至網站以護照驗證，Catchtable、外送等可使用", tags:["tip"] },
       ]},
       { title: "💳 換匯總表（單人）四大類金額", items: [
-        { time:"", type:"tip", icon:"💳", title:"個人刷卡金（WOWPASS）", sub:"NT$23,800　→　₩1,000,000\n用途：餐廳、購物、大額計程車（單趟>₩40,000）", tags:["tip"] },
-        { time:"", type:"trans", icon:"🚇", title:"個人交通金（T-money）", sub:"NT$360　→　約₩15,000\n用途：地鐵、公車（本行程多以計程車代步，交通金已下修）", tags:["trans"] },
-        { time:"", type:"warn", icon:"👛", title:"個人現金備用", sub:"NT$約240　→　₩10,000\n用途：私人零星花費、小費等備用金\n＊10/24換匯當場分好，各自保管，不與公費混用", tags:["warn"] },
-        { time:"", type:"night", icon:"🤝", title:"公費現金（三人均分出資，團體保管）", sub:"每人分攤　約NT$2,760　→　約₩116,000\n三人合計　NT$8,700　→　約₩348,000\n用途：路邊攤小吃、小額計程車（單趟<₩40,000）\n＊團體統一保管支付，方便均攤記帳", tags:["night","tip"] },
-        { time:"", type:"tip", icon:"🧮", title:"單人總計", sub:"約NT$3,000　→　約₩1,141,000", tags:["tip"] },
+        { time:"", type:"tip", icon:"💳", title:"WOWPASS 刷卡帳戶", sub:"台幣 $24,000　→　約₩1,056,000\n用途：餐廳、購物、大額計程車", tags:["tip"] },
+        { time:"", type:"trans", icon:"🚇", title:"T-money 交通卡", sub:"台幣 $400　→　約₩17,600\n用途：地鐵、公車", tags:["trans"] },
+        { time:"", type:"warn", icon:"👛", title:"韓幣現金", sub:"台幣 $8,000　→　約₩352,000\n用途：市場小吃、小額計程車、小費", tags:["warn"] },
+        { time:"", type:"night", icon:"🧯", title:"備用金", sub:"台幣 $1,600　→　約₩70,400\n用途：緊急備用，不列入日常花費，個人保管台幣現鈔不換匯", tags:["night"] },
+        { time:"", type:"tip", icon:"🧮", title:"單人合計", sub:"台幣 $34,000　→　約₩1,496,000", tags:["tip"] },
       ]},
-      { title: "📅 建議換匯時間點與金額（三人團體・僅2次）", items: [
-        { time:"10/24", type:"warn", icon:"🏨", title:"海雲台 Money Box（現金）＋WOWPASS機台（三人各自儲值）", sub:"Money Box現金兌換：NT$3,000　→　₩126,000\n　分配：個人現金備用 3人×₩10,000＝₩30,000（當場領出各自保管）\n　　　　公費現金　₩96,000（進團體資金池）\nWOWPASS機台儲值（單人）：刷卡金NT$23,800→₩1,000,000＋交通金NT$360→₩15,000", tags:["warn","tip"] },
-        { time:"10/27", type:"tip", icon:"🏮", title:"南浦洞換錢所（友利/映真）", sub:"NT$6,000　→　₩252,000（全數公費出資，支應10/27晚～11/1）\n＊換錢所以台幣$1,000為單位兌換", tags:["tip"] },
+      { title: "📅 分次換匯規劃（單人・僅2次）", items: [
+        { time:"10/24", type:"warn", icon:"🏨", title:"海雲台 Money Box（Seacloud飯店1F機台）", sub:"換匯 $4,000　→　約₩176,000\n分配：個人保管 ₩30,000（當場領出）＋公費入團體資金池 ₩146,000", tags:["warn","tip"] },
+        { time:"10/27", type:"tip", icon:"🏮", title:"南浦洞換錢所（友利/映真，7號出口）", sub:"換匯 $4,000　→　約₩176,000\n全數公費，支應10/27晚～11/1", tags:["tip"] },
+        { time:"", type:"warn", icon:"🧯", title:"備用金 $1,600", sub:"不列入換匯，隨身保留台幣現鈔，緊急狀況才動用", tags:["warn"] },
       ]},
       { title: "📌 預約事項", items: [
         { time:"", type:"tip", icon:"📲", title:"Wowpass APP 預購「換匯儲值卡」", sub:"獲得預約代碼，到韓國當地機台免開卡費", tags:["tip"] },
@@ -279,7 +285,7 @@ const days = [
       ]},
     ],
     navers: [],
-    tip: { title:"💡 使用小提醒", text:"點任一 Naver Map 韓文名稱可直接複製，貼到 Naver Map App 搜尋列即可查路線。行前不用先換匯，改成10/24＋10/27兩次團體換匯就備齊全程現金：10/24當場先分好三人各自的個人現金備用（各₩10,000），剩下的進團體公費資金池，統一保管支付路邊攤與小額計程車。大額計程車（單趟>₩40,000，如機場來回）記得改用WOWPASS刷卡金支付。" }
+    tip: { title:"💡 使用小提醒", text:"點任一 Naver Map 韓文名稱可直接複製，貼到 Naver Map App 搜尋列即可查路線。行前已改為至台灣銀行領取台幣$1,000新鈔（每人34張，共NT$34,000），另有$1,000已透過WOWPASS APP事前儲值供10/24機場接駁使用，不需再於高雄機場提早換匯。韓幣現金分兩次在當地換：10/24海雲台Money Box換$4,000（個人保管₩30,000＋公費₩146,000），10/27南浦洞換錢所再換$4,000（全數公費）。大額計程車（單趟>₩40,000，如機場來回）記得改用WOWPASS刷卡金支付。" }
   },
   {
     id: 1, btn: "10/24 出發", color: "orange",
@@ -287,14 +293,14 @@ const days = [
     sections: [
       { title: "✈ 出發動線", items: [
         { time:"14:00", type:"trans", icon:"🚇", title:"捷運左營站出發", sub:"最遲 14:15 搭上", tags:["trans"] },
-        { time:"15:00", type:"trans", icon:"🛫", title:"高雄機場辦理登機＋託運", sub:"出境前台灣銀行換韓元（台幣 $1,000 換韓元）", tags:["trans"] },
+        { time:"15:00", type:"trans", icon:"🛫", title:"高雄機場辦理登機＋託運", sub:"台幣新鈔已於行前在台灣銀行領妥，不需在機場另外換匯", tags:["trans"] },
         { time:"17:00", type:"trans", icon:"✈️", title:"班機起飛 → 釜山金海機場", sub:"", tags:["trans"] },
         { time:"20:30", type:"trans", icon:"🛬", title:"抵達金海機場", sub:"領行李、辦入境", tags:["trans"] },
       ]},
       { title: "🌙 抵達 & 安頓", items: [
-        { time:"22:00", type:"trans", icon:"🚗", title:"Klook 包車接機", sub:"出境大廳等司機舉牌\n目的地：해운대구 구남로 42", tags:["trans"] },
+        { time:"22:00", type:"trans", icon:"🚗", title:"Kakao T App 叫車（Venti車型）前往海雲台飯店", sub:"出境大廳叫車，線上刷卡／WOWPASS支付\n目的地：해운대구 구남로 42", tags:["trans"] },
         { time:"23:15", type:"tip", icon:"🏨", title:"Best Western Haeundae Check-in", sub:"", tags:["tip"] },
-        { time:"23:45", type:"shop", icon:"💳", title:"取得 Wowpass 實體卡、現金換匯、便利商店巡禮", sub:"(1) L7飯店（L7 해운대 바이 롯데）機台取得WP實體卡儲值刷卡金\n　　APP可綁定實體卡儲值到T-money交通卡\n(2) Seacloud飯店（코오롱 씨클라우드 호텔）一樓 Money Box 24H機台\n　　台幣 $3,000 換韓元（三人團體換匯）\n　　→ 個人現金備用 3人×₩10,000＝₩30,000（當場領出各自保管）\n　　→ 公費現金 ₩96,000（進團體資金池）\n(3) CU 或 GS25 買宵夜或想吃的品項", tags:["shop","tip"] },
+        { time:"23:45", type:"shop", icon:"💳", title:"取得 Wowpass 實體卡、現金換匯、便利商店巡禮", sub:"(1) L7飯店（L7 해운대 바이 롯데）機台取得WP實體卡儲值刷卡金\n　　APP可綁定實體卡儲值到T-money交通卡\n(2) Seacloud飯店（코오롱 씨클라우드 호텔）一樓 Money Box 24H機台\n　　台幣 $4,000 換韓元（每人約₩176,000）\n　　→ 個人保管 ₩30,000（當場領出）\n　　→ 公費 ₩146,000（進團體資金池）\n(3) CU 或 GS25 買宵夜或想吃的品項", tags:["shop","tip"] },
       ]},
     ],
     navers: [
@@ -302,15 +308,16 @@ const days = [
       ["L7 해운대","L7 해운대 바이 롯데","WOWPASS實體卡＋儲值機台"],
       ["Seacloud 飯店","코오롱 씨클라우드 호텔","1F Money Box 24H機台"],
     ],
-    tip: { title:"⚠ WOWPASS 使用提醒", text:"行前不用先換匯，第一天深夜抵達直接在Money Box一次換好台幣$3,000（三人團體），當場分好個人現金備用與公費現金，先用WOWPASS錢包帳戶（非T-money）應急，隔天再視需求儲值T-money交通卡。L7飯店與Seacloud飯店都在海雲台步行可達範圍，深夜巡禮換匯很方便。" }
+    tip: { title:"⚠ WOWPASS 使用提醒", text:"行前已在台灣銀行領妥台幣新鈔，抵達當晚直接在Money Box換好台幣$4,000（每人約₩176,000），個人保管₩30,000、公費₩146,000進團體資金池，先用WOWPASS錢包帳戶（非T-money）應急，隔天再視需求儲值T-money交通卡。L7飯店與Seacloud飯店都在海雲台步行可達範圍，深夜巡禮換匯很方便。抵達機場改用Kakao T App叫Venti車型前往飯店，線上刷卡或WOWPASS支付即可。" }
   },
   {
     id: 2, btn: "10/25 海雲台", color: "teal",
     label: "DAY 2 · 10/25（日）", title: "膠囊列車 × 青沙浦 × 達摩利", emojis: "🚡 📸 ☕",
     sections: [
       { title: "🌊 上午｜X the SKY & 膠囊列車", items: [
-        { time:"10:10", type:"trans", icon:"🚕", title:"計程車直接前往尾浦（미포）", sub:"", tags:["trans"] },
-        { time:"10:20", type:"sight", icon:"🏙", title:"釜山 X the SKY（100樓觀景台）", sub:"Naver：부산엑스더스카이\n步行往膠囊列車，建議11:00先到現場排隊及熟悉動線", tags:["sight"] },
+        { time:"09:30", type:"trans", icon:"🚕", title:"搭計程車出發前往釜山 X the SKY", sub:"", tags:["trans"] },
+        { time:"10:00", type:"sight", icon:"🏙", title:"釜山 X the SKY（100樓觀景台）", sub:"Naver：부산엑스더스카이\n100樓觀景台欣賞城市景觀", tags:["sight"] },
+        { time:"11:00", type:"trans", icon:"🚶", title:"離開釜山 X the SKY，步行往膠囊列車乘車處", sub:"排隊報到，憑E-ticket(QRCode)進場", tags:["trans"] },
         { time:"11:30", type:"trans", icon:"🚡", title:"膠囊列車 Mipo → Cheongsapo", sub:"Package: Sky Capsule + Beach Train\n⚠ 9/26（六）07:00 官網搶票", tags:["trans","sight"] },
       ]},
       { title: "📸 中午｜青沙浦打卡區", items: [
@@ -343,12 +350,15 @@ const days = [
       ["Cafe Alice Donut","카페 앨리스도넛","必點甜甜圈，也有賣釜山沙布蕾"],
       ["H.US Coffee（備選）","H.US Coffee","青沙浦最大間，3層樓海景"],
     ],
-    tip: { title:"💡 膠囊列車搶票", text:"9/26（六）07:00 準時至官網搶票，3人需同時預約膠囊列車＋海邊列車 All Pass。海邊文青咖啡廳兩選一：Cafe Alice Donut 甜甜圈必點、也有賣釜山沙布蕾；H.US Coffee 是青沙浦最大間、三層樓皆有海景。" }
+    tip: { title:"💡 膠囊列車搶票", text:"9/26（六）07:00 準時至官網搶票，3人需同時預約膠囊列車＋海邊列車 All Pass。今日上午時間已調整為9:30搭車出發、10:00抵達X the SKY，11:00步行前往膠囊列車乘車處排隊報到，憑E-ticket(QRCode)進場，11:30後行程照舊。海邊文青咖啡廳兩選一：Cafe Alice Donut 甜甜圈必點、也有賣釜山沙布蕾；H.US Coffee 是青沙浦最大間、三層樓皆有海景。" }
   },
   {
     id: 3, btn: "10/26 影島", color: "blue",
     label: "DAY 3 · 10/26（一）", title: "影島全日 × Arte Museum × 白淺灘", emojis: "🌊 🦀 🎨",
     sections: [
+      { title: "🧳 行李寄放", items: [
+        { time:"09:00", type:"warn", icon:"📦", title:"行李寄放飯店櫃檯", sub:"讓Zimcarry人員來收取", tags:["warn"] },
+      ]},
       { title: "🚌 上午｜1006巴士 → 影島", items: [
         { time:"09:45", type:"trans", icon:"🚌", title:"飯店出發往海雲台公車月台", sub:"1006往太宗台", tags:["trans"] },
         { time:"10:00", type:"trans", icon:"🚌", title:"1006巴士出發往影島", sub:"使用Naver Map查詢即時時刻表\n坐左側靠窗，欣賞釜山港大橋360°迴旋彎道\n청학시장（青鶴市場）站下車", tags:["trans","sight"] },
@@ -386,7 +396,7 @@ const days = [
       ["平山屋","평산옥","注意早收攤"],
       ["新發園炸餃子","신발원",""],
     ],
-    tip: { title:"⚠ 今日全程請穿耐走鞋", text:"影島坡道與階梯較多，白淺灘文化村沿海岸斷崖步道，建議穿好走的鞋。從海女村到白淺灘、咖啡廳之間都以計程車移動，時間抓寬鬆一點。" }
+    tip: { title:"⚠ 今日全程請穿耐走鞋", text:"影島坡道與階梯較多，白淺灘文化村沿海岸斷崖步道，建議穿好走的鞋。今早9:00先把行李放到飯店櫃檯讓Zimcarry人員收取，出門後就不用再管行李。從海女村到白淺灘、咖啡廳之間都以計程車移動，時間抓寬鬆一點。" }
   },
   {
     id: 4, btn: "10/27 梵魚寺", color: "green",
@@ -407,7 +417,7 @@ const days = [
       ]},
       { title: "🛍 晚間｜南浦洞 → 西面換房", items: [
         { time:"17:30", type:"trans", icon:"🚕", title:"搭計程車前往南浦洞", sub:"", tags:["trans"] },
-        { time:"17:45", type:"shop", icon:"🛍", title:"南浦洞商圈逛街", sub:"(1) 南浦洞7號出口步行換匯（友利우리환전/映真영진환전換錢所）\n　　台幣 $6,000 換韓元（三人團體公費，支應10/27晚～11/1）\n(2) K-POP唱片行（KPOP FRIENDS 남포점／I LOVE MUSIC 아이러브뮤직）\n(3) BIFF廣場 비프광장（電影節廣場＋堅果黑糖餅씨앗호떡）", tags:["shop"] },
+        { time:"17:45", type:"shop", icon:"🛍", title:"南浦洞商圈逛街", sub:"(1) 南浦洞7號出口步行換匯（友利우리환전/映真영진환전換錢所）\n　　台幣 $4,000 換韓元（每人約₩176,000，全數公費，支應10/27晚～11/1）\n(2) K-POP唱片行（KPOP FRIENDS 남포점／I LOVE MUSIC 아이러브뮤직）\n(3) BIFF廣場 비프광장（電影節廣場＋堅果黑糖餅씨앗호떡）", tags:["shop"] },
         { time:"19:15", type:"food", icon:"🥩", title:"晚餐：百花烤腸 백화양곱창", sub:"必點：鹽烤（소금구이）、調味烤腸（양념구이）、炒飯（양볶음밥）\n註：衣服會沾味道", tags:["food"] },
         { time:"20:30", type:"shop", icon:"🏮", title:"富平市場 부평시장（釜山最古老傳統市場）", sub:"推薦：富平罐頭골목（罐頭啤酒巷）炸物・紫菜飯捲", tags:["shop"] },
         { time:"21:00", type:"trans", icon:"🚇", title:"地鐵札嘎其站前往西面飯店", sub:"", tags:["trans"] },
@@ -429,7 +439,7 @@ const days = [
       ["富平市場","부평시장","釜山最古老傳統市場"],
       ["札嘎其站","자갈치역","前往西面飯店"],
     ],
-    tip: { title:"⚠ 換宿日 + 全程耐走鞋", text:"今日全程請穿耐走鞋（山路坡道與石階）。行李已於今早10:00前交海雲台飯店櫃檯走Zimcarry轉送西面，晚上21:30到西面飯店直接領取，不用自己扛著行李逛一整天。出發前記得電話1588-2001確認SES辦理時間。" }
+    tip: { title:"⚠ 換宿日 + 全程耐走鞋", text:"今日全程請穿耐走鞋（山路坡道與石階）。行李已於10/26早上9:00交海雲台飯店櫃檯走Zimcarry轉送西面，晚上21:30到西面飯店直接領取，不用自己扛著行李逛一整天。出發前記得電話1588-2001確認SES辦理時間。" }
   },
   {
     id: 5, btn: "10/28 慶州", color: "coral",
@@ -527,7 +537,7 @@ const days = [
       { title: "🛍 傍晚｜西面田浦工具街", items: [
         { time:"15:30", type:"trans", icon:"🚕", title:"搭計程車前往田浦工具街", sub:"전포공구길", tags:["trans"] },
         { time:"16:10", type:"shop", icon:"🛍", title:"西面田浦工具街 전포공구길", sub:"【潮流鞋與服飾】\nBalansa발란사（釜山在地街頭老牌）・Ader Error아더에러（前衛風旗艦店）\nMargarine Fingers・Avandress（複合式精品選物店）\nOdor오도어（小眾極簡設計師女裝、配件選品）\n【選物文具】\nObject오브젝트 전포점（獨家釜山獨立插畫家周邊）・狸貓洞穴너구리굴（無人寶藏雜貨店）\nMimi Donut미미도넛 부산점（美式復古玩具、療癒小物）\nAvenuel Shop애비뉴엘숍・Yoryori Room요료리룸・Twin Étoile트윈에뚜알\n【香氛】포이티(POETI)・A'ddict或L'odeur類文青感\n【K-POP唱片】POWER STATION파워스테이션（西面站2號出口，釜山最大）\n【咖啡廳與甜點】＊拍店家外觀即可\nBRACKET TABLE브래킷테이블（南法鄉村風廚房雜貨店，推薦小狗造型蛋糕和水果乳酪布丁）\nNiwa Bakery니와베이커리（招牌日式炒麵麵包、奶油鹽可頌）\nDndn기다리는동안（日韓混和復古風，季節性水果芭菲聖代、手沖咖啡）", tags:["shop"] },
-        { time:"18:00", type:"food", icon:"🍖", title:"田浦晚餐：餐廳三選一", sub:"BAO HOUSE바오하우스（刈包、炸茄子）＊當日17:15 Catchtable遠端登記\nCor Pasta Bar코르 파스타바（手工生麵義大利麵、麵疙瘩）＊提前Catchtable預約\nGotack고택（老宅餐酒館-美式芭比Q烤肉盤）＊剛開門可直接前往", tags:["food"] },
+        { time:"18:00", type:"food", icon:"🍚", title:"田浦晚餐三選一（更新選項）", sub:"(1) 밥이보약이다（飯是良藥－韓式家常定食）\n　推薦：제육볶음 정식(辣炒豬肉定食)、차돌된장찌개 정식(牛五花大醬湯定食)、고등어구이 정식(烤花鯖魚定食)\n(2) 서면개금밀면（西面開琴小麥麵）\n　推薦：물밀면(水小麥麵) 1碗(大份/大盛)、비빔밀면(乾拌小麥麵) 1碗(大份/大盛)、손만두(現蒸手包蒸餃) 2籠\n(3) 구워삶기 서면점（海陸章魚豬肉鍋）\n　推薦：매콤불고기(海陸辣燉豬肉鍋) 中份(辣度選小辣/普通)、당면만두(炸粉條扁餃子) 1份 或 모듬튀김(綜合炸物)、날치알 볶음밥(魚卵起司炒飯) 2份(料吃完後請店員製作)", tags:["food"] },
       ]},
       { title: "🚢 夜間｜Yacht Holic 夜遊船", items: [
         { time:"19:50", type:"warn", icon:"🚕", title:"計程車前往水營灣遊艇競技場", sub:"부산 해운대구 해운대해변로 84", tags:["warn","trans"] },
@@ -552,13 +562,13 @@ const days = [
       ["Mimi Donut","미미도넛 부산점","美式復古玩具小物"],
       ["BRACKET TABLE","브래킷테이블","南法鄉村風雜貨咖啡"],
       ["Niwa Bakery","니와베이커리","日式炒麵麵包"],
-      ["BAO HOUSE","바오하우스","刈包，需提前Catchtable登記"],
-      ["Cor Pasta Bar","코르 파스타바","需Catchtable預約"],
-      ["Gotack老宅餐酒館","고택","美式BBQ烤肉盤"],
+      ["밥이보약이다","밥이보약이다","田浦晚餐選項・韓式家常定食"],
+      ["서면개금밀면","서면개금밀면","田浦晚餐選項・西面開琴小麥麵"],
+      ["구워삶기 서면점","구워삶기 서면점","田浦晚餐選項・海陸章魚豬肉鍋"],
       ["水營灣遊艇競技場","수영만요트경기장","Yacht Holic報到處"],
       ["Puradak Chicken（宵夜備選）","푸라닭 부산해운대점",""],
     ],
-    tip: { title:"⚠ 時間管理關鍵日", text:"田浦晚餐吃完務必準時出發搭計程車前往水營灣，夜遊船開船前20分鐘須報到，晚間交通尖峰請預留充足緩衝時間。BAO HOUSE與Cor Pasta Bar都需要提前Catchtable候位／預約，記得當天17:15前完成登記。" }
+    tip: { title:"⚠ 時間管理關鍵日", text:"田浦晚餐三選一，吃完務必準時出發搭計程車前往水營灣，夜遊船開船前20分鐘須報到，晚間交通尖峰請預留充足緩衝時間。" }
   },
   {
     id: 8, btn: "10/31 萬聖節", color: "rose",
@@ -615,9 +625,12 @@ const days = [
       ]},
       { title: "✈ 下午｜前往機場", items: [
         { time:"15:00", type:"trans", icon:"🚕", title:"計程車前往金海機場", sub:"約25分鐘\n備案：地鐵2號線轉輕軌BGL（約40分鐘）", tags:["trans"] },
-        { time:"16:00", type:"warn", icon:"🏛", title:"退稅辦理＋登機託運", sub:"Step1：Self-Tax Refund機台掃護照＋單據\nStep2：臨櫃辦理登機＋託運\nStep3：過關後3F Gate4對面領現金", tags:["warn"] },
-        { time:"16:30", type:"cafe", icon:"☁", title:"Sky Hub Lounge 貴賓室", sub:"2F，9–10號登機門之間，韓式拌飯＋啤酒", tags:["cafe"] },
-        { time:"18:00", type:"trans", icon:"🚪", title:"準備登機", sub:"", tags:["trans"] },
+        { time:"15:30", type:"warn", icon:"🏧", title:"自助機台 Kiosk 辦理退稅", sub:"出境大廳B、C報到櫃檯附近有tax refund標示", tags:["warn"] },
+        { time:"16:00", type:"trans", icon:"🛄", title:"登機櫃檯報到及託運", sub:"時間足夠可到3樓吃雪冰 Sulbing\n推薦黃豆粉黃金年糕雪冰（인절미설빙）或季節冰品", tags:["trans"] },
+        { time:"16:30", type:"trans", icon:"🛂", title:"出境＋安檢", sub:"", tags:["trans"] },
+        { time:"17:00", type:"warn", icon:"🏛", title:"前往領取退稅", sub:"2樓4號登機門附近臨櫃or機台退韓元現金", tags:["warn"] },
+        { time:"17:30", type:"cafe", icon:"☁", title:"逛免稅店、使用貴賓室", sub:"貴賓室 Sky Hub Lounge，位置登機門9–10號之間\n提供 DIY 韓式拌飯（Bibimbap）、生啤酒、杯裝辛拉麵", tags:["cafe"] },
+        { time:"18:30", type:"trans", icon:"🚪", title:"抵達登機門準備登機", sub:"登機門預計4–8號之間", tags:["trans"] },
         { time:"18:55", type:"trans", icon:"✈️", title:"搭機回台灣", sub:"有飛機餐", tags:["trans"] },
       ]},
       { title: "🚄 返台動線", items: [
@@ -630,7 +643,7 @@ const days = [
       ["옵티마안약국 서면점","옵티마안약국 서면점","西面站10號出口旁"],
       ["合川一流豬肉湯飯西面店","합천일류돼지국밥 서면점",""],
     ],
-    tip: { title:"🎉 平安回家", text:"9天8夜的釜山深度旅遊圓滿結束！記得回台灣後把WOWPASS餘額提領出來，T-money卡留著下次韓國旅遊繼續使用。退稅記得先辦Self-Tax Refund機台再去登機櫃檯，過關後別忘了去3F Gate4對面領現金。" }
+    tip: { title:"🎉 平安回家", text:"9天8夜的釜山深度旅遊圓滿結束！記得回台灣後把WOWPASS餘額提領出來，T-money卡留著下次韓國旅遊繼續使用。退稅流程已更新：15:30先到自助Kiosk辦理退稅（出境大廳B、C櫃檯附近有標示）→16:00登機報到託運（時間夠可到3F吃Sulbing雪冰）→16:30出境安檢→17:00到2F 4號登機門附近領韓元現金退稅→17:30逛免稅店、到Sky Hub Lounge貴賓室（9–10號登機門之間，DIY拌飯／生啤酒／辛拉麵）→18:30到4–8號間登機門準備登機。" }
   }
 ];
 
