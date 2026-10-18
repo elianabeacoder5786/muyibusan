@@ -253,8 +253,8 @@ const days = [
         { time:"", type:"tip", icon:"🏨", title:"10/24–10/27　海雲台 Best Western", sub:"", tags:["tip"] },
         { time:"", type:"tip", icon:"🏨", title:"10/27–11/01　西面站周邊飯店", sub:"", tags:["tip"] },
       ]},
-      { title: "🧳 行李轉運 Zimcarry", items: [
-        { time:"", type:"warn", icon:"📦", title:"10/26　海雲台飯店 → 西面飯店", sub:"9:00前交櫃檯，10/27晚間21:30到西面飯店領取", tags:["warn"] },
+      { title: "🧳 行李轉運", items: [
+        { time:"", type:"warn", icon:"📦", title:"10/27　海雲台飯店 → 西面飯店", sub:"退房即寄放櫃檯（出門前完成），10/27晚間21:30到西面飯店領取", tags:["warn"] },
       ]},
       { title: "💴 行前換匯準備", items: [
         { time:"", type:"tip", icon:"🏦", title:"行前至台灣銀行領台幣$1000新鈔", sub:"每人34張，共計台幣 $34,000\n＊另有 $1,000 已透過WOWPASS APP事前儲值，供10/24機場接駁使用（已計入總預算）", tags:["tip"] },
@@ -280,7 +280,7 @@ const days = [
         { time:"", type:"warn", icon:"🚡", title:"膠囊列車搶票", sub:"9/26（六）07:00　官網準時搶票", tags:["warn"] },
         { time:"", type:"tip", icon:"🚢", title:"Yacht Holic 夜遊船", sub:"KakaoTalk: yachtholic\n10/25 先約 10/30 20:00 後場次", tags:["tip"] },
         { time:"", type:"tip", icon:"🎢", title:"樂天世界 VBP 換票", sub:"現場換", tags:["tip"] },
-        { time:"", type:"tip", icon:"💄", title:"MUPSY 彩妝預約", sub:"KakaoTalk：MUPSY멉씨 메이크업 헤어 속눈썹\n10/25 先約 10/31 15:00 後場次", tags:["tip"] },
+        { time:"", type:"tip", icon:"💄", title:"MUPSY 彩妝預約", sub:"KakaoTalk：MUPSY멉씨 메이크업 헤어 속눈썹\n✅ 已確認預約 10/31 14:00 場次", tags:["tip"] },
         { time:"", type:"warn", icon:"✈️", title:"Korean Air SES", sub:"出發前電話確認 1588-2001", tags:["warn"] },
       ]},
     ],
@@ -356,9 +356,6 @@ const days = [
     id: 3, btn: "10/26 影島", color: "blue",
     label: "DAY 3 · 10/26（一）", title: "影島全日 × Arte Museum × 白淺灘", emojis: "🌊 🦀 🎨",
     sections: [
-      { title: "🧳 行李寄放", items: [
-        { time:"09:00", type:"warn", icon:"📦", title:"行李寄放飯店櫃檯", sub:"讓Zimcarry人員來收取", tags:["warn"] },
-      ]},
       { title: "🚌 上午｜1006巴士 → 影島", items: [
         { time:"09:45", type:"trans", icon:"🚌", title:"飯店出發往海雲台公車月台", sub:"1006往太宗台", tags:["trans"] },
         { time:"10:00", type:"trans", icon:"🚌", title:"1006巴士出發往影島", sub:"使用Naver Map查詢即時時刻表\n坐左側靠窗，欣賞釜山港大橋360°迴旋彎道\n청학시장（青鶴市場）站下車", tags:["trans","sight"] },
@@ -396,12 +393,15 @@ const days = [
       ["平山屋","평산옥","注意早收攤"],
       ["新發園炸餃子","신발원",""],
     ],
-    tip: { title:"⚠ 今日全程請穿耐走鞋", text:"影島坡道與階梯較多，白淺灘文化村沿海岸斷崖步道，建議穿好走的鞋。今早9:00先把行李放到飯店櫃檯讓Zimcarry人員收取，出門後就不用再管行李。從海女村到白淺灘、咖啡廳之間都以計程車移動，時間抓寬鬆一點。" }
+    tip: { title:"⚠ 今日全程請穿耐走鞋", text:"影島坡道與階梯較多，白淺灘文化村沿海岸斷崖步道，建議穿好走的鞋。從海女村到白淺灘、咖啡廳之間都以計程車移動，時間抓寬鬆一點。" }
   },
   {
     id: 4, btn: "10/27 梵魚寺", color: "green",
     label: "DAY 4 · 10/27（二）", title: "梵魚寺賞楓 × SES × 甘川洞（換房日）", emojis: "🍁 ✈️ 🎨",
     sections: [
+      { title: "🧳 出發前｜退房＋行李寄放", items: [
+        { time:"出門前", type:"warn", icon:"📦", title:"退房＋行李寄放海雲台飯店櫃檯", sub:"退房即寄放櫃檯，再出發前往梵魚寺\n晚間21:30到西面飯店領取", tags:["warn"] },
+      ]},
       { title: "🍁 上午｜梵魚寺賞楓", items: [
         { time:"09:00", type:"trans", icon:"🚇", title:"地鐵1號線（老圃站노포역）→ 90號公車", sub:"梵魚寺售票處/管理事務所站 범어사매표소/관리사무소\n老圃站轉公車避開賞楓人潮", tags:["trans"] },
         { time:"10:00", type:"sight", icon:"🍁", title:"梵魚寺범어사賞楓拍照", sub:"約2小時・重點：一柱門、大雄殿楓葉林", tags:["sight"] },
@@ -421,7 +421,7 @@ const days = [
         { time:"19:15", type:"food", icon:"🥩", title:"晚餐：百花烤腸 백화양곱창", sub:"必點：鹽烤（소금구이）、調味烤腸（양념구이）、炒飯（양볶음밥）\n註：衣服會沾味道", tags:["food"] },
         { time:"20:30", type:"shop", icon:"🏮", title:"富平市場 부평시장（釜山最古老傳統市場）", sub:"推薦：富平罐頭골목（罐頭啤酒巷）炸物・紫菜飯捲", tags:["shop"] },
         { time:"21:00", type:"trans", icon:"🚇", title:"地鐵札嘎其站前往西面飯店", sub:"", tags:["trans"] },
-        { time:"21:30", type:"tip", icon:"🏨", title:"西面飯店 Check-in＋領取Zimcarry行李", sub:"", tags:["tip"] },
+        { time:"21:30", type:"tip", icon:"🏨", title:"西面飯店 Check-in＋領取寄放行李", sub:"", tags:["tip"] },
       ]},
     ],
     navers: [
@@ -439,7 +439,7 @@ const days = [
       ["富平市場","부평시장","釜山最古老傳統市場"],
       ["札嘎其站","자갈치역","前往西面飯店"],
     ],
-    tip: { title:"⚠ 換宿日 + 全程耐走鞋", text:"今日全程請穿耐走鞋（山路坡道與石階）。行李已於10/26早上9:00交海雲台飯店櫃檯走Zimcarry轉送西面，晚上21:30到西面飯店直接領取，不用自己扛著行李逛一整天。出發前記得電話1588-2001確認SES辦理時間。" }
+    tip: { title:"⚠ 換宿日 + 全程耐走鞋", text:"今日全程請穿耐走鞋（山路坡道與石階）。出門前先退房並把行李寄放在海雲台飯店櫃檯，晚上21:30到西面飯店領取，不用自己扛著行李逛一整天。出發前記得電話1588-2001確認SES辦理時間。" }
   },
   {
     id: 5, btn: "10/28 慶州", color: "coral",
@@ -580,20 +580,21 @@ const days = [
       ]},
       { title: "🍔 中午｜新世界百貨美食街 → 西面", items: [
         { time:"12:00", type:"food", icon:"🍲", title:"輕食：新世界百貨B1地下美食街", sub:"①Gordon Ramsay Burger 戈登拉姆齊漢堡（全韓唯二頂級漢堡店，推薦經典起司漢堡）\n②Taco Booth 타코부스（墨西哥塔可，推薦Birria燉肉塔可）\n【甜點帶著走】\n(1) Cafe Layered레이어드（經典原味司康或焦糖奶油司康）\n(2) Knotted노티드（國民級爆漿甜甜圈，推薦經典香草奶油Milk Cream、伯爵茶Earl Grey）\n(3) Baekmidang百味堂（原味牛奶霜淇淋Milk Ice Cream）", tags:["food"] },
-        { time:"13:00", type:"trans", icon:"🚕", title:"搭計程車往西面", sub:"地址：부산 부산진구 동천로 103\n位於五六大樓오륙빌딩6F（一樓是知名連鎖咖啡廳A Twosome Place）", tags:["trans"] },
+        { time:"13:15", type:"trans", icon:"🚕", title:"搭計程車往西面", sub:"車程約20–30分鐘，預留塞車緩衝（MUPSY遲到10分鐘以上不接待）\n地址：부산 부산진구 동천로 103\n位於五六大樓오륙빌딩6F（一樓是知名連鎖咖啡廳A Twosome Place）", tags:["trans"] },
       ]},
       { title: "💄 下午｜MUPSY 彩妝體驗", items: [
-        { time:"13:30", type:"cafe", icon:"💄", title:"MUPSY 西面店 멉씨 부산서면점", sub:"個人色彩診斷＋日常彩妝＋髮型造型\n約2–2.5小時", tags:["cafe","tip"] },
-        { time:"16:00", type:"trans", icon:"🚕", title:"美美的搭計程車前往廣安里 Millac the Market", sub:"", tags:["trans"] },
+        { time:"14:00", type:"cafe", icon:"💄", title:"MUPSY 西面店 멉씨 부산서면점", sub:"個人色彩診斷＋日常彩妝＋髮型造型\n約2–2.5小時", tags:["cafe","tip"] },
+        { time:"16:30", type:"trans", icon:"🚕", title:"美美的搭計程車前往廣安里 Millac the Market", sub:"", tags:["trans"] },
       ]},
       { title: "🎃 傍晚｜廣安里萬聖節", items: [
-        { time:"16:15", type:"shop", icon:"🥛", title:"廣安里 Millac the Market 밀락더마켓", sub:"수영구 민락수변로17번길 56\n(1) Swala Greek Yogurt 스왈라（廣安里海灘附近，推薦優格抹醬）\n(2) 欣賞現場演出、逛廣場內文創/選物店家（45RPM、快閃店）", tags:["shop","cafe"] },
+        { time:"16:45", type:"shop", icon:"🥛", title:"廣安里 Millac the Market 밀락더마켓", sub:"수영구 민락수변로17번길 56\n(1) Swala Greek Yogurt 스왈라（廣安里海灘附近，推薦優格抹醬）\n(2) 欣賞現場演出、逛廣場內文創/選物店家（45RPM、快閃店）", tags:["shop","cafe"] },
         { time:"17:30", type:"shop", icon:"🛍", title:"廣安里海灘漫步＋巷弄文創選物店", sub:"Orange Bada오렌지바다（釜山在地青年文創基地）\nGorilla고릴라소품샵（廣安里道具街周邊）\n17:15 Catch Table遠端候位：小香燉牛排骨소향갈비찜", tags:["shop"] },
         { time:"18:30", type:"food", icon:"🥩", title:"晚餐：小香燉牛排骨 소향갈비찜", sub:"해운대구 우동1로20번길 29 2층\n推薦：燉牛排骨（起司口味）、魚卵炒飯、生牛肉拌麵", tags:["food"] },
         { time:"20:30", type:"night", icon:"🌆", title:"走逛海灘周圍、找觀賞最佳位置", sub:"", tags:["night"] },
         { time:"21:00", type:"night", icon:"🎆", title:"萬聖節無人機秀", sub:"廣安里海水浴場沙灘中心觀賞", tags:["sight","night"] },
         { time:"22:00", type:"night", icon:"🎃", title:"沙灘、Millac the Market木棧道", sub:"欣賞音樂表演，跟觀眾聊聊天", tags:["night"] },
-        { time:"23:30", type:"trans", icon:"🚕", title:"計程車返回西面飯店", sub:"約20分鐘\n宵夜外送或預訂自取\n①Goubne辣椒脆脆炸雞 굽네치킨 고추바사삭（選全去骨순살）\n②萬多恩豬蹄半半 만다은족발 반반족발（原味+辣味）", tags:["trans","food"] },
+        { time:"22:30", type:"trans", icon:"🚇", title:"步行至廣安站，搭地鐵2號線返回西面", sub:"廣安站 광안역 → 西面站 서면역（往양산/호포方向），約20分鐘\n⚠ 廣安站往西面方向末班車約 23:42（週六時刻表，查詢結果僅供參考）\n建議最遲 23:00 前上車，萬聖節夜晚人多，出發前請用Naver Map再確認", tags:["trans"] },
+        { time:"23:00", type:"tip", icon:"🏨", title:"返回西面飯店", sub:"宵夜外送或預訂自取\n①Goubne辣椒脆脆炸雞 굽네치킨 고추바사삭（選全去骨순살）\n②萬多恩豬蹄半半 만다은족발 반반족발（原味+辣味）", tags:["tip","food"] },
       ]},
     ],
     navers: [
@@ -603,12 +604,13 @@ const days = [
       ["小香燉牛排骨","소향갈비찜","해운대구 우동1로20번길 29 2층"],
       ["Millac the Market","밀락더마켓","수영구 민락수변로17번길 56"],
       ["廣安里海水浴場","광안리해수욕장","無人機秀觀賞點"],
+      ["廣安站（地鐵2號線）","광안역","回程搭地鐵至西面站"],
       ["Orange Bada選物","오렌지바다","釜山在地青年文創基地"],
       ["Gorilla小物店","고릴라소품샵","廣安里道具街周邊"],
       ["Goubne炸雞（宵夜）","굽네치킨 고추바사삭","選全去骨순살"],
       ["萬多恩豬蹄（宵夜）","만다은족발","반반족발原味+辣味"],
     ],
-    tip: { title:"💄 MUPSY 預約 & 今日動線", text:"MUPSY需提前預約，10/25先約10/31 15:00後場次，記得提前透過KakaoTalk確認時段與人數。今日以計程車為主要移動方式：Spa Land → 西面午餐/MUPSY → 廣安里，全天不太費力。小香燉牛排骨17:15前記得完成Catch Table候位登記。" }
+    tip: { title:"💄 MUPSY 預約 & 今日動線", text:"MUPSY已確認預約10/31 14:00場次，記得提前透過KakaoTalk再確認時段與人數。今日白天以計程車為主要移動方式：Spa Land → 西面午餐/MUPSY → 廣安里；晚上回程改搭地鐵2號線（廣安站→西面站），預計23:00回到飯店；廣安站往西面方向末班車約23:42，請勿拖太晚。小香燉牛排骨17:15前記得完成Catch Table候位登記。" }
   },
   {
     id: 9, btn: "11/1 返程", color: "red",
@@ -621,21 +623,23 @@ const days = [
       { title: "💊 中午｜藥局採購＋西面走逛", items: [
         { time:"12:30", type:"shop", icon:"💊", title:"藥局補貨：옵티마안약국 서면점", sub:"西面站10號出口旁，步行即達\n推薦品項：\nMelanosa 2% 乳膏 멜라노사크림（退黑色素、淡斑跟痘疤）\nAcleon Gel애클린겔 / Azelean아젤라인산（閉鎖性粉刺、黑頭、暗沉）\nFucidin후시딘軟膏（抗痘消炎）\nImoand이모엔드 或 口服淡斑藥먹는 기미약（口服美白錠）\n韓版大尺寸痘痘貼 Easyderm Beauty이지덤뷰티", tags:["shop"] },
         { time:"13:30", type:"shop", icon:"🛍", title:"西面站周圍街頭最後走逛", sub:"💳 順道至西面WOWPASS機台，提領卡內剩餘刷卡金（現金領出）", tags:["shop","tip"] },
-        { time:"14:30", type:"tip", icon:"🏨", title:"返回飯店取回行李", sub:"", tags:["tip"] },
+        { time:"15:00", type:"tip", icon:"🏨", title:"返回飯店取回行李", sub:"", tags:["tip"] },
       ]},
       { title: "✈ 下午｜前往機場", items: [
-        { time:"15:00", type:"trans", icon:"🚕", title:"計程車前往金海機場", sub:"約25分鐘\n備案：地鐵2號線轉輕軌BGL（約40分鐘）", tags:["trans"] },
-        { time:"15:30", type:"warn", icon:"🏧", title:"自助機台 Kiosk 辦理退稅", sub:"出境大廳B、C報到櫃檯附近有tax refund標示", tags:["warn"] },
-        { time:"16:00", type:"trans", icon:"🛄", title:"登機櫃檯報到及託運", sub:"時間足夠可到3樓吃雪冰 Sulbing\n推薦黃豆粉黃金年糕雪冰（인절미설빙）或季節冰品", tags:["trans"] },
-        { time:"16:30", type:"trans", icon:"🛂", title:"出境＋安檢", sub:"", tags:["trans"] },
-        { time:"17:00", type:"warn", icon:"🏛", title:"前往領取退稅", sub:"2樓4號登機門附近臨櫃or機台退韓元現金", tags:["warn"] },
-        { time:"17:30", type:"cafe", icon:"☁", title:"逛免稅店、使用貴賓室", sub:"貴賓室 Sky Hub Lounge，位置登機門9–10號之間\n提供 DIY 韓式拌飯（Bibimbap）、生啤酒、杯裝辛拉麵", tags:["cafe"] },
-        { time:"18:30", type:"trans", icon:"🚪", title:"抵達登機門準備登機", sub:"登機門預計4–8號之間", tags:["trans"] },
-        { time:"18:55", type:"trans", icon:"✈️", title:"搭機回台灣", sub:"有飛機餐", tags:["trans"] },
+        { time:"15:30", type:"trans", icon:"🚕", title:"計程車前往金海機場", sub:"約25分鐘\n備案：地鐵2號線轉輕軌BGL（約40分鐘）", tags:["trans"] },
+        { time:"16:00", type:"warn", icon:"🏧", title:"自助機台 Kiosk 辦理退稅", sub:"出境大廳B、C報到櫃檯附近有tax refund標示", tags:["warn"] },
+        { time:"16:30", type:"trans", icon:"🛄", title:"登機櫃檯報到及託運", sub:"時間足夠可到3樓吃雪冰 Sulbing\n推薦黃豆粉黃金年糕雪冰（인절미설빙）或季節冰品", tags:["trans"] },
+        { time:"17:00", type:"trans", icon:"🛂", title:"出境＋安檢", sub:"", tags:["trans"] },
+        { time:"17:30", type:"warn", icon:"🏛", title:"前往領取退稅", sub:"2樓4號登機門附近臨櫃or機台退韓元現金", tags:["warn"] },
+        { time:"18:00", type:"cafe", icon:"☁", title:"逛免稅店、使用貴賓室", sub:"貴賓室 Sky Hub Lounge，位置登機門9–10號之間\n提供 DIY 韓式拌飯（Bibimbap）、生啤酒、杯裝辛拉麵", tags:["cafe"] },
+        { time:"19:00", type:"trans", icon:"🚪", title:"抵達登機門準備登機", sub:"登機門預計4–8號之間", tags:["trans"] },
+        { time:"19:25", type:"trans", icon:"✈️", title:"搭機回台灣", sub:"有飛機餐\n⚠ 班機已通知延後起飛，實際起飛時間以航空公司通知為準，以下回台時間需依實際降落時間調整", tags:["trans"] },
       ]},
       { title: "🚄 返台動線", items: [
-        { time:"20:25", type:"trans", icon:"🛬", title:"抵達桃園機場", sub:"轉機捷至高鐵桃園站", tags:["trans"] },
-        { time:"22:35", type:"trans", icon:"🚄", title:"南下高鐵", sub:"", tags:["trans"] },
+        { time:"21:00", type:"trans", icon:"🛬", title:"抵達桃園機場（原訂時間，需依延誤調整）", sub:"入境、領行李，依指標前往 B1 機場捷運站", tags:["trans"] },
+        { time:"21:40", type:"trans", icon:"🚇", title:"搭桃園機場捷運（普通車）→ A18 高鐵桃園站", sub:"往台北方向，搭乘「普通車」（直達車不停A18高鐵桃園站）\n約15–20分鐘，A18下車後依指標步行至高鐵桃園站\n實際班次與車程請以桃捷官網／Google Maps為準", tags:["trans"] },
+        { time:"22:05", type:"tip", icon:"🎫", title:"抵達高鐵桃園站，確認車票與月台", sub:"預留約30分鐘緩衝：取票／驗票、買宵夜", tags:["tip"] },
+        { time:"22:35", type:"trans", icon:"🚄", title:"南下高鐵", sub:"末班車，盡量搭乘", tags:["trans"] },
         { time:"23:59", type:"tip", icon:"🏠", title:"抵達高鐵左營站，平安到家！🎉", sub:"", tags:["tip"] },
       ]},
     ],
@@ -643,7 +647,7 @@ const days = [
       ["옵티마안약국 서면점","옵티마안약국 서면점","西面站10號出口旁"],
       ["合川一流豬肉湯飯西面店","합천일류돼지국밥 서면점",""],
     ],
-    tip: { title:"🎉 平安回家", text:"9天8夜的釜山深度旅遊圓滿結束！記得回台灣後把WOWPASS餘額提領出來，T-money卡留著下次韓國旅遊繼續使用。退稅流程已更新：15:30先到自助Kiosk辦理退稅（出境大廳B、C櫃檯附近有標示）→16:00登機報到託運（時間夠可到3F吃Sulbing雪冰）→16:30出境安檢→17:00到2F 4號登機門附近領韓元現金退稅→17:30逛免稅店、到Sky Hub Lounge貴賓室（9–10號登機門之間，DIY拌飯／生啤酒／辛拉麵）→18:30到4–8號間登機門準備登機。" }
+    tip: { title:"🎉 平安回家", text:"9天8夜的釜山深度旅遊圓滿結束！記得回台灣後把WOWPASS餘額提領出來，T-money卡留著下次韓國旅遊繼續使用。返程流程已更新：15:00回飯店取行李→15:30計程車前往機場→16:00先到自助Kiosk辦理退稅（出境大廳B、C櫃檯附近有標示）→16:30登機報到託運（時間夠可到3F吃Sulbing雪冰）→17:00出境安檢→17:30到2F 4號登機門附近領韓元現金退稅→18:00逛免稅店、到Sky Hub Lounge貴賓室（9–10號登機門之間，DIY拌飯／生啤酒／辛拉麵）→19:00到4–8號間登機門準備登機→19:25起飛。21:00抵達桃園後搭機捷普通車到A18高鐵桃園站，22:35搭南下高鐵，23:59抵達左營。⚠ 班機已通知延後起飛，22:35高鐵為末班車，盡量搭乘。" }
   }
 ];
 
